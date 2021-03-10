@@ -1,0 +1,15 @@
+{
+  "name": "monitor_backend",
+  "version": "1.0.0",
+  "description": "PKUMirror monitor backend. It scans the log directory to get synchronization status.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zizheng Guo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nocache": "^2.1.0"
+  }
+}
