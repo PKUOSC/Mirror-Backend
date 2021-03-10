@@ -7,7 +7,7 @@ if [[ judge -gt 1 ]]; then
     exit 0
 fi
 
-source /data/PKUMirror/cron/mon.sh
+source /data/backend/cron/mon.sh
 
 cd /data/repos/pypi
 mon pypi /usr/local/bin/bandersnatch mirror

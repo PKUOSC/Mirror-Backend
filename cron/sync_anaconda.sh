@@ -7,6 +7,6 @@ if [[ judge -gt 1 ]]; then
     exit 0
 fi
 
-source /data/PKUMirror/cron/mon.sh
+source /data/backend/cron/mon.sh
 
-mon anaconda python3 /data/PKUMirror/scripts/sync_anaconda_script.py
+mon anaconda python3 /data/backend/scripts/sync_anaconda_script.py

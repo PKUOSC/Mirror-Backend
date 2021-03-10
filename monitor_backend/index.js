@@ -11,7 +11,7 @@ const nocache = require('nocache');
 const app = express();
 
 // Log directory. must be same as what's in cron/mon.sh
-const logdir = '/data/PKUMirror/log';
+const logdir = '/data/log';
 
 app.route('/stat').all(nocache()).get(async (req, res) => {
   // return res.json({'test': true});

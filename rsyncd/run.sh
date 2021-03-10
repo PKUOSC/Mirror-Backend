@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo rsync --config /data/PKUMirror/rsyncd/rsyncd.conf --daemon 
+sudo rsync --config /data/backend/rsyncd/rsyncd.conf --daemon 

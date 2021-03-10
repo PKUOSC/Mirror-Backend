@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /data/PKUMirror/cron/mon.sh
+source /data/backend/cron/mon.sh
 
 # pypi sync takes too long. moved to a separate file.
 # mon pypi /usr/local/bin/bandersnatch mirror

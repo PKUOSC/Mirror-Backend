@@ -3,7 +3,7 @@
 # @author Zizheng Guo
 # @brief Ultra simple synchronization monitor in bash
 
-logdir=/data/PKUMirror/log
+logdir=/data/log
 
 mkdir -p $logdir/running
 mkdir -p $logdir/done

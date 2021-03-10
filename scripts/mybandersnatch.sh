@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
 
 judge=`ps aux|grep /usr/local/bin/bandersnatch|wc -l`
-log_file=/data/PKUMirror/log/pypi.`date +%Y-%m-%d-%H-%M-%S`.log
+log_file=/data/log/pypi.`date +%Y-%m-%d-%H-%M-%S`.log
 echo ${log_file}
 
 if [[ judge -gt 1 ]]; then
@@ -27,6 +27,6 @@ do
     echo ${i}
 done
 
-log_file=/data/PKUMirror/log/pypi.`date +%Y-%m-%d-%H-%M-%S`.log
+log_file=/data/log/pypi.`date +%Y-%m-%d-%H-%M-%S`.log
 echo ${log_file}
 /usr/local/bin/bandersnatch mirror > ${log_file} 2>&1
