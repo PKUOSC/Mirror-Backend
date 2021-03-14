@@ -23,7 +23,7 @@ mon linuxmint rsync -avHh --delete --delete-after --delay-updates --safe-links -
 
 mon linuxmint-cdimages rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g rsync://mirrors.kernel.org/linuxmint/ /data/repos/linuxmint-cdimages
 
-mon opensuse rsync -avHh --delete --delete-after --delay-updates --safe-links --exclude={history,ports,source} --stats --no-o --no-g rsync://fr2.rpmfind.net/linux/opensuse/  /datatmp/opensuse
+mon opensuse rsync -avHh --delete --delete-after --delay-updates --safe-links --exclude={history,ports,source} --stats --no-o --no-g rsync://fr2.rpmfind.net/linux/opensuse/  /data/repos/opensuse
 
 mon debian-cd rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g rsync://mirrors.kernel.org/debian-cd/ /data/repos/debian-cd
 
