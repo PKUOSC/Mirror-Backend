@@ -30,3 +30,7 @@ mon debian-cd rsync -avHh --delete --delete-after --delay-updates --safe-links -
 mon gentoo rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g rsync://mirror.us.leaseweb.net/gentoo/ /data/repos/gentoo/
 
 mon debian rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g rsync://mirrors.tuna.tsinghua.edu.cn/debian/ /data/repos/debian
+
+mon huggingface /usr/local/bin/aws --no-sign-request s3 sync s3://models.huggingface.co/bert /data/repos/huggingface
+
+mon anaconda python3 /data/backend/scripts/sync_anaconda_script.py
