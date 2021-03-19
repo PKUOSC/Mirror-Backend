@@ -7,7 +7,7 @@ source /data/backend/cron/mon.sh
 
 mon ubuntu-releases rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g rsync://rsync.releases.ubuntu.com/releases/ /data/repos/ubuntu-releases
 
-mon ubuntu-cdimages rsync -avHh --delete --delete-after --delay-updates --safe-links --exclude={daily-live,daily-preinstalled,daily}  --stats --no-o --no-g rsync://cdimage.ubuntu.com/cdimage/ /data/repos/ubuntu-cdimages
+mon ubuntu-cdimages rsync -avHh --delete --delete-after --delay-updates --safe-links --exclude={daily-live,daily-preinstalled,daily}  --stats --no-o --no-g rsync://cdimage.ubuntu.com/cdimage/ /data/repos/ubuntu-cdimage
 
 mon ubuntu rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g rsync://archive.ubuntu.com/ubuntu/ /data/repos/ubuntu
 
@@ -21,7 +21,7 @@ mon archlinuxarm rsync -avHh --delete --delete-after --delay-updates --safe-link
 
 mon linuxmint rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g rsync://mirrors.kernel.org/linuxmint-packages/ /data/repos/linuxmint
 
-mon linuxmint-cdimages rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g rsync://mirrors.kernel.org/linuxmint/ /data/repos/linuxmint-cdimages
+mon linuxmint-cdimages rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g rsync://mirrors.kernel.org/linuxmint/ /data/repos/linuxmint-cd
 
 mon opensuse rsync -avHh --delete --delete-after --delay-updates --safe-links --exclude={history,ports,source} --stats --no-o --no-g rsync://fr2.rpmfind.net/linux/opensuse/  /data/repos/opensuse
 
