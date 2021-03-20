@@ -1,0 +1,13 @@
+log file = /data/log/rsync.log
+pid file = /var/run/rsyncd.pid
+motd file = /data/backend/rsyncd/rsyncd.motd
+uid = nobody
+gid = nobody
+ouse chroot = yes 
+read only = true
+transfer logging = yes
+refuse options = checksum dry-run
+dont compress = *.gz *.tgz *.zip *.z *.xz *.rpm *.deb *.iso *.bz2 *.tbz 
+
+
+
