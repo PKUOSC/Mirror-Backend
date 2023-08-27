@@ -8,7 +8,10 @@ declare -a all_stores=(\
 all_stores_len=${#all_stores[@]}
 
 for (( i=0; i<${all_stores_len}; i++ )); do
-  mkdir -p ${all_stores[$i]}
+  mkdir -p ${all_stores[$i]}/releases
+  mkdir -p ${all_stores[$i]}/installers
+  cp ./etc/elan-init.sh  ${all_stores[$i]}/installers/elan-init.sh
+  cp ./etc/elan-init.ps1 ${all_stores[$i]}/installers/elan-init.ps1
 done
 
 latest_release=$(curl -sSfL https://api.github.com/repos/leanprover/elan/releases/latest)
@@ -24,7 +27,7 @@ for asset in $latest_assets; do
   curl -sSfL "$url" -o "$temp_file"
 
   for (( j=0; j<${all_stores_len}; j++ )); do
-    store=${all_stores[$j]}
+    store=${all_stores[$j]}/releases
     cp "$temp_file" "$store/$asset"
   done
 
