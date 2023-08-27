@@ -13,9 +13,11 @@
 # install elan. It just does platform detection, downloads the installer
 # and runs it.
 
+# PKUOSC note: forked @ https://github.com/leanprover/elan/blob/04475bbb556a1144b446f44aae30dadd8ba160d3/elan-init.sh
+
 set -u
 
-ELAN_UPDATE_ROOT="https://github.com/leanprover/elan/releases"
+ELAN_UPDATE_ROOT="https://mirrors.pku.edu.cn/elan/releases"
 
 #XXX: If you change anything here, please make the same changes in setup_mode.rs
 usage() {

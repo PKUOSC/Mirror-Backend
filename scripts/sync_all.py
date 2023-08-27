@@ -6,10 +6,10 @@ def get_sync_script(up_urls, file_out, local_dir, log_dir):
             out = up_url[0]
         elif len(up_url)==2:
             url, dir_name = up_url
-            out = "rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g {} {}/{} > {}/{}.`date +%Y-%m-%d-%H-%M-%S`.log 2>&1 ".format(url, local_dir,  dir_name, log_dir, dir_name)
+            out = "rsync -avHh --delete --delete-after --delay-updates --safe-links --stats --no-o --no-g {} {}/{} > {}/{}.`date +%Y-%m-%d-%H-%M-%S`.log 2>&1 ".format(url, local_dir, dir_name, log_dir, dir_name)
         elif len(up_url)==3:
             url, dir_name, exl = up_url
-            out =  "rsync -avHh --delete --delete-after --delay-updates --safe-links --exclude={}  --stats --no-o --no-g {} {}/{} > {}/{}.`date +%Y-%m-%d-%H-%M-%S`.log 2>&1 ".format(exl, url, local_dir,  dir_name, log_dir, dir_name)
+            out = "rsync -avHh --delete --delete-after --delay-updates --safe-links --exclude={}  --stats --no-o --no-g {} {}/{} > {}/{}.`date +%Y-%m-%d-%H-%M-%S`.log 2>&1 ".format(exl, url, local_dir, dir_name, log_dir, dir_name)
         print(out)
         # print()
         f.write(out+"\n")
