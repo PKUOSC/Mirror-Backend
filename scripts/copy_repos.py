@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 S=/data/repos
 D=/datahdd/repos
 

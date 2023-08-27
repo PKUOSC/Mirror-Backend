@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 judge=`ps aux|grep /usr/local/bin/bandersnatch|wc -l`
 

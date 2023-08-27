@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 files=`ls /data/repos`
 cf='/etc/rsyncd.conf'

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # @file mon.sh
 # @author Zizheng Guo
 # @brief Ultra simple synchronization monitor in bash
