@@ -1,5 +1,5 @@
 # 北大镜像
-
+此后端不再使用，实际后端为https://github.com/PKUOSC/SyncController
 ## scripts
 包含同步镜像所需的各种脚本
 
